@@ -1,5 +1,6 @@
 import React from "react";
 
+import ReactJson from "react-json-view";
 import {
   Alert,
   Button,
@@ -86,6 +87,8 @@ const App: React.FC = () => {
     <IntlProvider locale={ptBR}>
       <div>
         {/* <JSONView formValue={formValue} formError={formError} /> */}
+        <ReactJson src={formValue} />
+        <ReactJson src={formError} />
         <Form
           style={{ padding: 20 }}
           ref={form}
@@ -140,6 +143,7 @@ const App: React.FC = () => {
           </CustomField>
 
           <CustomField
+            disabled
             name="status"
             label="Status"
             accepter={SelectPicker}
