@@ -1,0 +1,53 @@
+.rs-input {
+  display: block;
+  width: 100%;
+  color: #575757;
+  background-color: #f1f1f1;
+  background-image: none;
+  border: 1px solid #c7c7c7;
+  -webkit-transition: border-color ease-in-out 0.3s;
+  transition: border-color ease-in-out 0.3s;
+  border-radius: 0px;
+  padding: 7px 11px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  height: 36px\9;
+}
+
+.rs-input:focus,
+.rs-input:hover {
+  border-color: #84c5f0;
+  outline: 0;
+}
+
+.rs-picker-default:not(.rs-picker-disabled) .rs-btn:hover,
+.rs-picker-default:not(.rs-picker-disabled) .rs-picker-toggle:hover,
+.rs-picker-default:not(.rs-picker-disabled) .rs-btn.active,
+.rs-picker-default:not(.rs-picker-disabled) .rs-picker-toggle.active {
+  border-color: #84c5f0;
+}
+
+.rs-picker-default .rs-picker-toggle {
+  position: relative;
+  z-index: 5;
+  padding-right: 32px;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  color: #575757;
+  border: 1px solid #c7c7c7;
+}
+
+.rs-picker-default .rs-btn,
+.rs-picker-input .rs-btn,
+.rs-picker-default .rs-picker-toggle,
+.rs-picker-input .rs-picker-toggle {
+  background: #f1f1f1 !important;
+  border-radius: 0px;
+  border-color: #c7c7c7;
+}
+
+.rs-input-group:not(.rs-input-group-inside) {
+  border: 1px solid #c7c7c7;
+  border-radius: 0px;
+}
